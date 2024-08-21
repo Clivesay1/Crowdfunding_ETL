@@ -4,7 +4,7 @@ DROP TABLE "category" CASCADE;
 DROP TABLE "contacts" CASCADE;
 DROP TABLE "subcategory" CASCADE;
 
-
+--Create campaign table
 CREATE TABLE "campaign" (
     "cf_id" int NOT NULL,
     "contact_id" int NOT NULL,
@@ -25,6 +25,7 @@ CREATE TABLE "campaign" (
      )
 );
 
+--Create category table
 CREATE TABLE "category" (
     "category_id" varchar(10) NOT NULL,
     "category" varchar(50) NOT NULL,
@@ -33,6 +34,7 @@ CREATE TABLE "category" (
      )
 );
 
+--Create subcategory table
 CREATE TABLE "subcategory" (
     "subcategory_id" varchar(10) NOT NULL,
     "subcategory" varchar(50) NOT NULL,
@@ -41,6 +43,7 @@ CREATE TABLE "subcategory" (
      )
 );
 
+--Create contacts table
 CREATE TABLE "contacts" (
     "contact_id" int NOT NULL,
     "first_name" varchar(20) NOT NULL,
@@ -51,6 +54,7 @@ CREATE TABLE "contacts" (
      )
 );
 
+--Sets foreign keys for tables
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_contact_id" FOREIGN KEY("contact_id")
 REFERENCES "contacts" ("contact_id");
 
@@ -60,12 +64,11 @@ REFERENCES "category" ("category_id");
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_subcategory_id" FOREIGN KEY("subcategory_id")
 REFERENCES "subcategory" ("subcategory_id");
 
--- Import order: (1) category, (2) subcategory, (3) contacts, (4) campaign
+--Remove the (--) from the code below to show results 
+--SELECT * FROM category;
 
-SELECT * FROM category;
+--SELECT * FROM subcategory;
 
-SELECT * FROM subcategory;
+--SELECT * FROM campaign;
 
-SELECT * FROM campaign;
-
-SELECT * FROM contacts;
+--SELECT * FROM contacts;
