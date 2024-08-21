@@ -64,4 +64,10 @@ Evidence (Photos)
 ERD diagram:
 ![alt text](<ERD Diagram.png>)
 
+CROWDFUNDING DATABASE:
+![image](https://github.com/user-attachments/assets/ffa2b225-8d1b-44dc-8ffb-e0ff6fad0814)
+![image](https://github.com/user-attachments/assets/6abdfcb3-5051-42ea-9554-1d8f03264da8)
+![image](https://github.com/user-attachments/assets/497e8187-87d4-4a23-b9a2-b0e3c4629943)
+
+
 
