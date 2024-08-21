@@ -46,6 +46,20 @@ A Campaign DataFrame
 A Contacts DataFrame
 A Crowdfunding Database 
 
+ANALYSIS:
+-What are the challenges associated with ETL?
+    -Data Quality Issues
+    -Scalibility and Performance
+    _Integration Issues
+-What are the benefits of ETL?
+    -Data Quality and Cleansing
+    -Improved Data Analytics
+    -Efficiency
+-How might ETL change when moving to the cloud?
+    -Cost Management
+    -Error handling and Recovery
+    -Maintance and Upgrades
+
 Evidence (Photos)
 ERD diagram:
 ![alt text](<ERD Diagram.png>)
